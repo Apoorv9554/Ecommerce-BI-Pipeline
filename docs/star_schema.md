@@ -18,7 +18,7 @@ This structure improves:
 
 # Star Schema Diagram
 
-![Star Schema](architecture/star_schema.png)
+![Star Schema](../architecture/star_schema.png)
 
 ---
 
