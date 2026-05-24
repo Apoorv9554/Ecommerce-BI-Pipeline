@@ -94,7 +94,7 @@ The architecture also integrates:
 ## 🔹 Star Schema Architecture
 
 <p align="center">
-  <img src="architecture/dashboard_architecture.png" width="900"/>
+  <img src="architecture/star_schema.png" width="900"/>
 </p>
 
 ### Explanation
@@ -129,7 +129,7 @@ This enables:
 ## 🔹 Workflow Pipeline
 
 <p align="center">
-  <img src="architecture/workflow.png" width="1000"/>
+  <img src="architecture/workflow_pipeline.png"/>
 </p>
 
 ### Explanation
@@ -243,7 +243,7 @@ The BI dashboard contains multiple business-focused analytics pages.
 ## 📌 Executive Summary
 
 <p align="center">
-  <img src="dashboard_screenshots/executive_summary.png" width="1000"/>
+  <img src="dashboard_screenshots/Executive Summary.png"/>
 </p>
 
 ### Features
@@ -260,7 +260,7 @@ The BI dashboard contains multiple business-focused analytics pages.
 ## 📌 Sales Analysis
 
 <p align="center">
-  <img src="dashboard_screenshots/sales_analysis.png" width="1000"/>
+  <img src="dashboard_screenshots/Sales Analysis.png"/>
 </p>
 
 ### Features
@@ -276,7 +276,7 @@ The BI dashboard contains multiple business-focused analytics pages.
 ## 📌 Customer Insights
 
 <p align="center">
-  <img src="dashboard_screenshots/customer_insights.png" width="1000"/>
+  <img src="dashboard_screenshots/Customer Insights.png" width="1000"/>
 </p>
 
 ### Features
@@ -292,7 +292,7 @@ The BI dashboard contains multiple business-focused analytics pages.
 ## 📌 Product Analytics
 
 <p align="center">
-  <img src="dashboard_screenshots/product_analytics.png" width="1000"/>
+  <img src="dashboard_screenshots/Product Analysis.png" width="1000"/>
 </p>
 
 ### Features
@@ -308,7 +308,7 @@ The BI dashboard contains multiple business-focused analytics pages.
 ## 📌 Discount & Coupon Analytics
 
 <p align="center">
-  <img src="dashboard_screenshots/discount_coupon_analysis.png" width="1000"/>
+  <img src="dashboard_screenshots/Discount & Coupan Analyis.png" width="1000"/>
 </p>
 
 ### Features
@@ -324,7 +324,7 @@ The BI dashboard contains multiple business-focused analytics pages.
 ## 📌 Financial Analysis
 
 <p align="center">
-  <img src="dashboard_screenshots/financial_analysis.png" width="1000"/>
+  <img src="dashboard_screenshots/Financial Analysis.png" width="1000"/>
 </p>
 
 ### Features
