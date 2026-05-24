@@ -8,6 +8,12 @@ The workflow automates the complete ETL lifecycle starting from raw CSV ingestio
 
 ---
 
+# Workfolw Pipeline
+
+![Star Schema](architecture/workflow_pipeline.png)
+
+---
+
 # Workflow Stages
 
 ## 1. Data Ingestion (Bronze Layer)
