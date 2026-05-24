@@ -21,7 +21,9 @@ This layered architecture improves:
 
 # Architecture Diagram
 
-![Medallion Architecture](architecture/medallion_architecture.png)
+<p align="center">
+  <img src="../architecture/medallion_architecture.png" width="1000"/>
+</p>
 
 ---
 
