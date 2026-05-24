@@ -1,0 +1,84 @@
+{
+  "name": "Ecommerce ETL Pipeline",
+  "email_notifications": {
+    "no_alert_for_skipped_runs": false
+  },
+  "webhook_notifications": {},
+  "timeout_seconds": 0,
+  "trigger": {
+    "pause_status": "PAUSED",
+    "periodic": {
+      "interval": 5,
+      "unit": "DAYS"
+    }
+  },
+  "max_concurrent_runs": 1,
+  "tasks": [
+    {
+      "task_key": "Bronze",
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/apoorvprakashgupta5@gmail.com/Project_ecommerce/3_fact_processing/1_fact_bronze",
+        "base_parameters": {
+          "Task name": "fact_bronze",
+          "Type": "Notebook",
+          "Notebook": "1_fact_bronze",
+          "Cluster": "Create new / existing",
+          "Depends On": ""
+        },
+        "source": "WORKSPACE"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {},
+      "webhook_notifications": {},
+      "disabled": false
+    },
+    {
+      "task_key": "Silver",
+      "depends_on": [
+        {
+          "task_key": "Bronze"
+        }
+      ],
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/apoorvprakashgupta5@gmail.com/Project_ecommerce/3_fact_processing/2_fact_silver",
+        "base_parameters": {
+          "Task name": "fact_silver",
+          "Notebook": "2_fact_silver",
+          "Depends On": "fact_bronze"
+        },
+        "source": "WORKSPACE"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {},
+      "webhook_notifications": {},
+      "disabled": false
+    },
+    {
+      "task_key": "Gold",
+      "depends_on": [
+        {
+          "task_key": "Silver"
+        }
+      ],
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/apoorvprakashgupta5@gmail.com/Project_ecommerce/3_fact_processing/3_fact_gold",
+        "base_parameters": {
+          "Task name": "fact_gold",
+          "Notebook": "3_fact_gold",
+          "Depends On": "fact_silver"
+        },
+        "source": "WORKSPACE"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {},
+      "disabled": false
+    }
+  ],
+  "queue": {
+    "enabled": true
+  },
+  "performance_target": "PERFORMANCE_OPTIMIZED"
+}
