@@ -10,7 +10,7 @@ The workflow automates the complete ETL lifecycle starting from raw CSV ingestio
 
 # Workfolw Pipeline
 
-![Star Schema](architecture/workflow_pipeline.png)
+![work flow](architecture/workflow_pipeline.png)
 
 ---
 
